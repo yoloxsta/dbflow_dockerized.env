@@ -10,5 +10,8 @@
 
 `docker exec -it database-backend-1 sh`
 
+`curl -X POST http://localhost:3000/submit -H "Content-Type: application/json" -d '{"name": "namexyz"}'`
+
+
 
 #

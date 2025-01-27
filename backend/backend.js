@@ -2,16 +2,17 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config({ path: '../.env' });
 
 const app = express();
 const port = 3000;
 
 // Database configuration
 const dbConfig = {
-  host: 'mysql-db',  // MySQL service name in docker-compose
-  user: 'root',
-  password: 'yngWIE500',
-  database: 'simple_project',
+  host: process.env.DB_HOST,  // MySQL service name in docker-compose
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 };
 
 let db;
