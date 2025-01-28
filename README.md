@@ -15,4 +15,4 @@
 
 ##for ingress
 Edit /etc/hosts
-ip dns
+ip_address dns
