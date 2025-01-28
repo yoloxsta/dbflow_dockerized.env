@@ -16,3 +16,23 @@
 ##for ingress
 Edit /etc/hosts
 ip_address dns
+
+
+##project-directory/
+├── backend/
+│   ├── backend.js
+│   ├── Dockerfile
+│   └── package.json
+├── frontend/
+│   ├── index.html
+│   └── Dockerfile
+├── .env
+├── kubernetes/
+│   ├── deployment-backend.yaml
+│   ├── deployment-frontend.yaml
+│   ├── ingress.yaml
+│   ├── service-backend.yaml
+│   ├── service-frontend.yaml
+│   └── secret-tls.yaml
+├── docker-compose.yml
+└── README.md
