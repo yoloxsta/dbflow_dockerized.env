@@ -18,7 +18,9 @@ Edit /etc/hosts
 ip_address dns
 
 
-##project-directory/
+##dir
+
+project-directory/
 ├── backend/
 │   ├── backend.js
 │   ├── Dockerfile
