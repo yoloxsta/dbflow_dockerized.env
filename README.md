@@ -13,4 +13,6 @@
 `curl -X POST http://localhost:3000/submit -H "Content-Type: application/json" -d '{"name": "namexyz"}'`
 
 
-#
+##for ingress
+Edit /etc/hosts
+ip dns
