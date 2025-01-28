@@ -19,7 +19,7 @@ ip_address dns
 
 
 ##dir
-
+```
 project-directory/
 ├── backend/
 │   ├── backend.js
@@ -38,3 +38,4 @@ project-directory/
 │   └── secret-tls.yaml
 ├── docker-compose.yml
 └── README.md
+```
