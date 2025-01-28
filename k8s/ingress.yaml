@@ -5,8 +5,12 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  tls:
+    - hosts:
+        - soetintaungdev.com
+      secretName: soetintaungdev-com-tls  # Name of the TLS secret
   rules:
-    - host: myapp.local
+    - host: soetintaungdev.com
       http:
         paths:
           - path: /

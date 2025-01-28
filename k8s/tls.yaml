@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: soetintaungdev-com-tls
+  namespace: default
+type: kubernetes.io/tls
+data:
+  tls.crt: <BASE64_ENCODED_CERTIFICATE>  # Replace with base64 output of certificate.crt
+  tls.key: <BASE64_ENCODED_PRIVATE_KEY>  # Replace with base64 output of private.key
