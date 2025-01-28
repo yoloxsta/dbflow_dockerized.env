@@ -35,7 +35,8 @@ project-directory/
 │   ├── ingress.yaml
 │   ├── service-backend.yaml
 │   ├── service-frontend.yaml
-│   └── tls.yaml
+│   ├── tls.yaml
+│   └── secret.yaml
 ├── docker-compose.yml
 └── README.md
 ```
