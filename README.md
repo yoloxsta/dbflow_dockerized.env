@@ -37,6 +37,8 @@ project-directory/
 │   ├── service-frontend.yaml
 │   ├── tls.yaml
 │   └── secret.yaml
+│   └── pv.yaml
+│   └── pvc.yaml
 ├── docker-compose.yml
 └── README.md
 ```
