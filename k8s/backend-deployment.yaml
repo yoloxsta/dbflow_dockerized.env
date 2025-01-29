@@ -38,3 +38,10 @@ spec:
                   key: db-name
           ports:
             - containerPort: 3000
+          volumeMounts:
+            - name: backend-storage
+              mountPath: "/app/data"  # Inside Container
+      volumes:
+        - name: backend-storage
+          persistentVolumeClaim:
+            claimName: backend-pvc  # Use the PVC

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: backend-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce  # Must match PV accessModes
+  storageClassName: manual  # Must match PV storageClassName
+  volumeMode: Filesystem  # Ensures PVC uses a file system
+  resources:
+    requests:
+      storage: 5Gi  # Must be less than or equal to PV storage
+  volumeName: backend-pv  # Bind explicitly to PV
