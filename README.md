@@ -43,6 +43,8 @@ project-directory/
 └── README.md
 ```
 
+##Install Jenkins by using Helm
+
 ```
 helm install jenkins -n jenkins -f jenkins-values.yaml $chart
 
