@@ -50,6 +50,7 @@ helm install jenkins -n jenkins -f jenkins-values.yaml $chart
 
 https://blog.devops.dev/deploying-jenkins-with-helm-a-step-by-step-guide-df63c2dc35d2 
 
+openssl req -new -newkey rsa:2048 -nodes -keyout private.key -out request.csr -subj "/C=US/ST=California/L=San Francisco/O=MyCompany/CN=soetintaungdev.com"
 ```
 
 #
