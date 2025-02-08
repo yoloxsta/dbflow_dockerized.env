@@ -51,6 +51,30 @@ helm install jenkins -n jenkins -f jenkins-values.yaml $chart
 https://blog.devops.dev/deploying-jenkins-with-helm-a-step-by-step-guide-df63c2dc35d2 
 
 openssl req -new -newkey rsa:2048 -nodes -keyout private.key -out request.csr -subj "/C=US/ST=California/L=San Francisco/O=MyCompany/CN=soetintaungdev.com"
+
 ```
 
-#
+##rds
+
+```
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+    restart: always
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    restart: always
+    
+```
+
