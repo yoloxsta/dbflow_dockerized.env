@@ -68,13 +68,11 @@ services:
       - DB_USER=${DB_USER}
       - DB_PASS=${DB_PASS}
       - DB_NAME=${DB_NAME}
-    restart: always
 
   frontend:
     build: ./frontend
     ports:
       - "80:80"
-    restart: always
 
 ```
 
