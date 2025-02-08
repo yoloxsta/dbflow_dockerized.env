@@ -57,7 +57,7 @@ openssl req -new -newkey rsa:2048 -nodes -keyout private.key -out request.csr -s
 ##rds
 
 ```
-version: '3'
+version: '3.8'
 services:
   backend:
     build: ./backend
@@ -75,6 +75,6 @@ services:
     ports:
       - "80:80"
     restart: always
-    
+
 ```
 
